@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoapp</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="todo container-fluid">
+
+       
+
+<div class= " col-xl-5 col-lg-8  col-md-10 col-sm-10 main mt-5">
+    <div class="alert alert-danger text-center d-none" role="alert">
+        Add content!
+    </div>
+    <!-- inputs -->
+   <div class="main-section py-4  ">
+    <h1 class="text-center text-white p-3">To do list</h1>
+    <div class="row">
+        <div class="col-lg-9  mt-2 ">
+            <input type="text" placeholder="New thing to do" class="form-control write-data" id="write-data">
+        </div>
+        <div class="col-lg-3 mt-2 p-0 buttons ">
+        <button class="btn " onclick="addData()" id="submiteBtn">Add New <i class="fa-solid fa-thumbtack  "></i></button>
+        <button class="btn updateBtn d-none" onclick="changeData()" id="submiteBtn">update <i class="fa-solid fa-pen-to-square  mt-2"></i></button>
+        
+        
+        </div>
+    </div>
+    
+   </div>
+
+   <!-- tasks -->
+ <div class="search"> <input type="text"  class="search-input position-relative" oninput="searchData(this.value)"><i class="fa-solid fa-magnifying-glass position-absolute start-25 pe-3 "></i></div>
+  <div class="tasks" id="tasks">
+  </div>
+  <!-- Complate -->
+  <div class="complate" >
+<h2 class="text-center">Done</h2>
+
+  </div>
+  <div id="complate" class="tasks-complate">
+
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="colors text-center mt-5">
+    <p>Choose your color palette</p>
+  <div class=" w-50 mx-auto d-flex justify-content-around ">
+      <div class="color color1"></div>
+  <div class="color color2 "></div>
+  <div class="color color3"></div>
+  <div class="color color4"></div>
+</div>
+</div>
+</div>
+
+
+
+    </section>
+
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
