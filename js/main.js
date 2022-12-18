@@ -49,6 +49,8 @@ function addData(){
         note :inputData.value,
         }
         dataArr.push(notes);
+               dataArr.reverse();
+
         localStorage.setItem('notes',JSON.stringify(dataArr))
         display()
         clear()
